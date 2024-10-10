@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Subpages</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo img {
+            height: 50px;
+            max-height: 80px;
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-size: 16px !important;
+        }
+
+        .dropdown-menu a {
+            font-weight: 200;
+            font-size: 13px;
+        }
+
+        /* Custom CSS to show dropdown on hover */
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        /* Ensuring the dropdown stays open when hovered */
+        .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .dropdown-menu a {
+            border-bottom: -5px solid rgb(202, 199, 199);
+        }
+
+        .nav-item .dropdown-menu .dropdown-item {
+            border-bottom: .5px solid rgb(212, 211, 211);
+        }
+
+        /* Custom CSS for the mobile view toggle */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: start;
+            }
+
+            .dropdown-menu {
+                display: none;
+            }
+
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+        }
+
+        /* Increase gap between nav items */
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+
+        .top-header {
+            background-color: #083f76;
+            /* Dark Blue background */
+            color: white;
+            padding: 10px 0;
+            z-index: 1000;
+            position: relative;
+        }
+
+        .top-header a {
+            color: rgb(209, 207, 207);
+            margin-left: 15px;
+        }
+
+        .top-header .right-links a {
+            margin-right: 20px;
+            /* Increased spacing */
+        }
+
+        .top-header a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .top-header svg {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 767px) {
+            .top-header {
+                display: none;
+            }
+        }
+
+        .header {
+            z-index: 1000;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-header d-none d-md-block">
+        <div class="container-custom">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="mailto:info@iac.edu.pk">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l6 3.6 6-3.6V4a1 1 0 0 0-1-1H2zm13 2.383L8 9.618l-7-4.235V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.383z"/>
+                        </svg>
+                        info@iac.edu.pk
+                    </a>
+                    <a href="tel:(042) 111 111 822">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 1 .896-.272l2.165 1.09c.232.117.359.367.305.626l-.547 2.737a.678.678 0 0 1-.312.448l-1.516.758a11.286 11.286 0 0 0 5.516 5.516l.758-1.516a.678.678 0 0 1 .448-.312l2.737-.547a.678.678 0 0 1 .626.305l1.09 2.165a.678.678 0 0 1-.272.896l-2.48 1.24c-.275.138-.592.22-.92.232a12.678 12.678 0 0 1-12.63-12.63c.011-.328.094-.645.232-.92l1.24-2.48z"/>
+                        </svg>
+                        (042) 111 111 822
+                    </a>
+                </div>
+                <div class="col-md-6 text-right right-links">
+                    <a href="#">CONTACT US</a>
+                    <a href="#">PORTAL</a>
+                    <a href="https://eduboard.iac.edu.pk/AdmissionPortal/Login">APPLY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header bg-white border-bottom">
+        <div class="container-custom">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#">
+                    <img src=".\imgs\download.jpeg" height="70px" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABOUT US
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" href="./Introduction.html">INTRODUCTION</a>
+                                <a class="dropdown-item" href="./leadership.html">LEADERSHIP</a>
+                                <a class="dropdown-item" href="./misson&vision.html">MISSION & VISION</a>
+                                <a class="dropdown-item" href="./accreditations.html">ACCREDITATIONS</a>
+                                <a class="dropdown-item" href="./Collaboration.html">COLLABORATIONS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="admissionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ADMISSION
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="admissionDropdown">
+                                <a class="dropdown-item" href="./admission.html">ADMISSION GUIDES</a>
+                                <a class="dropdown-item" href="./feeStructure.html">FEE STRUCTURE</a>
+                                <a class="dropdown-item" href="./scholarship.html">SCHOLARSHIP</a>
+                                <a class="dropdown-item" href="PDF/Prospectus-2023-24.pdf">PROSPECTUS</a>
+                                <a class="dropdown-item" href="./downloads.html">DOWNLOADS</a>
+                                <a class="dropdown-item" href="https://eduboard.iac.edu.pk/AdmissionPortal/Login">APPLY NOW</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ACADEMICS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <a class="dropdown-item" href="./faculty.html">FACULTY</a>
+                                <a class="dropdown-item" href="sp.html">SCHOOLS & PROGRAMS</a>
+                                <a class="dropdown-item" href="PDF/leaflet_2.pdf">DIPLOMAS & SHORT COURSES</a>
+                                <a class="dropdown-item" href="PDF/Academic-Calendar-2023-24.pdf">ACADEMICS CALENDAR</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./lifetAtIAC.html">LIFE AT IAC</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MEDIA
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="mediaDropdown">
+                                <a class="dropdown-item" href="#">GALLERY</a>
+                                <a class="dropdown-item" href="#">NEWSLETTERS</a>
+                                <a class="dropdown-item" href="#">THESIS DISPLAY</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./research.html">RESEARCH</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+.container-fluid {
+    padding: 10px 90px;
+    /* font-size: 20px; */
+}
+
+.video-cover {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-container {
+    border-radius: 20px;
+    position: relative;
+    width: 90%;
+    /* Adjust to control the width of the container */
+    /* background: #194174; */
+    padding: 20px 0;
+    margin: -10vh auto 0;
+    /* Center the container and adjust to overlap half of the video */
+    z-index: 2;
+}
+
+.bottom-container .section {
+
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    /* background-color: #8EA0B8; */
+    /* Background color for sections */
+    margin: 10px 0;
+    /* Gap between sections */
+}
+
+.bottom-container .section {
+
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #194174;
+    /* Background color for sections */
+    margin: 10px 0;
+    /* Gap between sections */
+}
+
+@media (min-width: 768px) {
+    .bottom-container .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom-container .section {
+        flex: 1;
+        margin: 0 10px;
+        /* Gap between sections */
+    }
+
+    .bottom-container .section:first-child {
+        margin-left: 0;
+        /* Remove left margin for first section */
+    }
+
+    .bottom-container .section:last-child {
+        margin-right: 0;
+        /* Remove right margin for last section */
+    }
+}
+
+.custom-link {
+    color: rgb(233, 231, 231);
+    /* Normal link color */
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: rgb(255, 255, 255);
+    /* Link color on hover */
+    text-decoration: none;
+    /* Optional: underline on hover */
+}
+
+.section i {
+    margin-right: 20px;
+}
+
+
+/* Admission contant start */
+#admission-frame {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.admission-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* font-family: optima; */
+    padding-left: 50px;
+
+}
+
+.admission-content h3 {
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(25, 47, 89);
+}
+
+.admission-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #161616;
+}
+
+#admission-apply {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 60px;
+    margin-top: 40px;
+    background-color: #194174;
+    border-radius: 3%;
+    transition: background-color 0.2s ease-in;
+}
+
+#admission-apply:hover,
+#admission-apply.active {
+    background-color: rgb(25, 47, 89);
+
+}
+
+#admission-link {
+    color: white;
+    padding: 20px 15px 20px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media (max-width:768px) {
+    .admission-content {
+        margin-top: 50px;
+    }
+
+    .admission-content h2 {
+        font-size: 40px;
+    }
+
+    .admission-content p {
+        font-size: 18px;
+    }
+}
+
+
+
+/* At glance section */
+
+#glance {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#glance-container h3 {
+    padding: 10px;
+    color: rgb(25, 47, 89);
+    font-size: 40px;
+    /* font: 40px optima; */
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.embed-responsive-item {
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    width: 100%;
+}
+@media (max-width:768px){
+    .container-custom iframe{
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+/* Grid */
+#features-grid {
+    background-color: #194174;
+}
+
+#features-container {
+    padding: 70px 0;
+}
+
+.feature-item {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.feature-item h3 {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.feature-item p {
+    color: white;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.carousel-item {
+    background-color: #194174;
+    color: white;
+    padding: 20px;
+}
+
+.carousel-item .feature-item {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators li {
+    background-color: white;
+}
+
+
+
+
+/* school & program */
+#program-section {
+    background-color: #ffffff;
+}
+
+#program-container h1 {
+    display: flex;
+    margin-left: 10px;
+    padding: 40px 0 40px 0;
+    color: rgb(25, 47, 89);
+    /* font-family: optima; */
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#program-col {
+    padding-bottom: 40px;
+}
+
+#program-col img {
+    transition: transform 0.3s ease;
+}
+
+#program-col img:hover,
+#program-col img.active {
+    transform: scale(1.1);
+}
+
+#program-col:hover {
+    overflow: hidden;
+}
+
+
+/* counter values */
+.stats-container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.stat-box {
+    color: white;
+    background-color: #194174;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.stat-icon {
+    font-size: 40px;
+    color: white;
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.stat-text {
+    font-size: 14px;
+}
+
+
+/* video swiper */
+.swiper {
+    width: 100%;
+    height: 80vh;
+}
+.swiper h1{
+    font-weight: bold;
+    color: #194174;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #f9f9f9; */
+    padding: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    /* 1:1 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.video-caption {
+    margin-top: 30px;
+    font-size: 17px;
+    color: #333;
+}
+
+.swiper-pagination {
+    margin-top: 60px;
+    /* margin-bottom: px; */
+}

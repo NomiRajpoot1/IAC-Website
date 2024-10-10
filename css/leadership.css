@@ -1,0 +1,117 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .about-us-section {
+    height: 150px;
+    background-color: #194174 !important;
+    /* Blue background color */
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    position: relative;
+  }
+  
+  .breadcrumb {
+    background-color: #194174 !important;
+    /* background: transparent; */
+    justify-content: center;
+    /* Center the breadcrumb */
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>' !important;
+    color: rgb(255, 255, 255) !important;
+    /* Color of the separator */
+    padding: 0 10px;
+    /* Adjust the spacing between items */
+  }
+  .con h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-item a {
+    color: rgb(255, 255, 255);
+    /* Color of the breadcrumb links */
+  }
+  .breadcrumb-item a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .display-4 {
+    font-weight: bolder;
+    margin-top: -30px;
+  }
+  
+
+
+
+
+.section2 {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.text1 {
+    padding: 5px;
+}
+
+
+.img1 img {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+.text2{
+    padding: 5px;
+}
+.text{
+    text-align: justify;
+}
+
+
+
+
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+.profile-info {
+    color: #194174;
+}
+.profile-info h3 {
+    margin: 0;
+}
+.profile-info p {
+    font-weight: 600;
+    margin: 5px 0;
+    color: #000;
+}
+.profile-info h3{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.section4 {
+    margin-top: 20px;
+}
+.video-content iframe {
+    width: 100%;
+    height: 315px;
+}

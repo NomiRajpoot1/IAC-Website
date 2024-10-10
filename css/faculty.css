@@ -1,0 +1,138 @@
+
+.about-us-section {
+    height: 150px;
+    background-color: #194174 !important;
+    /* Blue background color */
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    position: relative;
+  }
+  
+  .breadcrumb {
+    background-color: #194174 !important;
+    /* background: transparent; */
+    justify-content: center;
+    /* Center the breadcrumb */
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: '>' !important;
+    color: rgb(255, 255, 255) !important;
+    /* Color of the separator */
+    padding: 0 10px;
+    /* Adjust the spacing between items */
+  }
+  .con h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-item a {
+    color: rgb(255, 255, 255);
+    /* Color of the breadcrumb links */
+  }
+  .breadcrumb-item a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .display-4 {
+    font-weight: bolder;
+    margin-top: -30px;
+  }
+  
+
+
+
+
+
+
+
+.float1 {
+    height: 380px;
+    width: 350px;
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+
+
+
+
+
+
+
+
+.aside-bar .nav-link {
+    color: #194174;
+}
+nav{
+    margin-top: 20px;
+}
+
+.aside-bar .nav-link.active {
+    border-radius: 20px;
+    color: white;
+    background-color: #194174;
+    /* Active link background color */
+ }
+
+.section2 {
+    margin-top: 20px;
+}
+
+.aside-bar{
+    border-radius: 20px;
+    padding: 35px;
+    height: calc(100vh - 150px); 
+     /*allowing the navigation bar to be scrollable*/
+} 
+
+/* profile card */
+.profile-card {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.profile-card img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+.profile-card .btn {
+    background-color: #194174 ;
+    color: white;
+}
+.profile-card .btn:hover {
+    background-color: #194174;
+}
+.profile-card .d-block{
+    padding-bottom: 10px;
+}
+.email-icon {
+    color: #099bf7; 
+}
+/* profile card */
+
+@media (max-width: 991px) {
+    .aside-bar {
+        height: auto; /* Adjust height for smaller screens */
+        max-height: 710px; /* Set a maximum height */
+        /* overflow-y: auto; */
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        flex-direction: row;
+    }
+    .aside-bar {
+        order: 0;
+        flex: 0 0 25%; /* Adjust width as needed */
+    }
+    .content {
+        order: 1;
+        flex: 0 0 75%; /* Adjust width as needed */
+    }
+}

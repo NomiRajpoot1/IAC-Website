@@ -1,0 +1,113 @@
+.about-us-section {
+    height: 150px;
+    background-color: #194174 !important;
+    /* Blue background color */
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    position: relative;
+}
+
+.breadcrumb {
+    background-color: #194174 !important;
+    /* background: transparent; */
+    justify-content: center;
+    /* Center the breadcrumb */
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '>' !important;
+    color: rgb(255, 255, 255) !important;
+    /* Color of the separator */
+    padding: 0 10px;
+    /* Adjust the spacing between items */
+}
+
+.con h1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.breadcrumb-item a {
+    color: rgb(255, 255, 255);
+    /* Color of the breadcrumb links */
+}
+
+.breadcrumb-item a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.display-4 {
+    font-weight: bolder;
+    margin-top: -30px;
+}
+
+
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-section .text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-section .video-content {
+    flex: 0 0 300px;
+    /* Fixed width for the video */
+}
+
+.video-content .embed-responsive {
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+}
+
+p {
+    text-align: justify;
+}
+
+.facilities-section h2 {
+    margin-bottom: 30px;
+}
+
+.facility-card img {
+    width: 100%;
+    height: auto;
+}
+
+.facility-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.facility-card h5 {
+    margin-top: 10px;
+}
+
+.facility-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.facility-card:hover img {
+    transform: scale(1.1);
+}
+
+.content-section .image-content {
+    flex: 0 0 300px;
+    /* Fixed width for the image */
+}
+
+
+.float1 {
+    height: 240px;
+    width: 413px;
+    float: right;
+    margin: 0 0 20px 20px;
+}

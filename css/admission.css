@@ -1,0 +1,103 @@
+.about-us-section {
+  height: 150px;
+  background-color: #194174 !important;
+  /* Blue background color */
+  color: rgb(255, 255, 255);
+  padding: 50px 0;
+  position: relative;
+}
+
+.breadcrumb {
+  background-color: #194174 !important;
+  /* background: transparent; */
+  justify-content: center;
+  /* Center the breadcrumb */
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '>' !important;
+  color: rgb(255, 255, 255) !important;
+  /* Color of the separator */
+  padding: 0 10px;
+  /* Adjust the spacing between items */
+}
+
+.con h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.breadcrumb-item a {
+  color: rgb(255, 255, 255);
+  /* Color of the breadcrumb links */
+}
+
+.breadcrumb-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.display-4 {
+  font-weight: bolder;
+  margin-top: -30px;
+}
+
+
+/* 1st session */
+.admission-info {
+  padding: 20px;
+}
+
+.admission-info h2 {
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #194174;
+}
+
+/* 2nd session */
+.requirement-container {
+  display: flex;
+  align-items: center;
+}
+
+.requirement-text {
+  padding-left: 20px;
+}
+
+.requirement-text h2 {
+  font-weight: bold;
+}
+
+/* 3rd session */
+.procedure-container {
+  display: flex;
+  align-items: center;
+}
+
+.procedure-text {
+  padding: 20px;
+}
+
+.procedure-heading {
+  font-weight: bold;
+}
+
+.procedure-list {
+  list-style: none;
+  padding: 0;
+}
+
+.procedure-list li {
+  margin-bottom: 10px;
+}
+
+.procedure-list li::before {
+  content: "✔️";
+  margin-right: 10px;
+}
+
+p {
+  text-align: justify;
+}

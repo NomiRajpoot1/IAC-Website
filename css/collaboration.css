@@ -1,0 +1,95 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.about-us-section {
+  height: 150px;
+  background-color: #194174 !important;
+  /* Blue background color */
+  color: rgb(255, 255, 255);
+  padding: 50px 0;
+  position: relative;
+}
+
+.breadcrumb {
+  background-color: #194174 !important;
+  /* background: transparent; */
+  justify-content: center;
+  /* Center the breadcrumb */
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '>' !important;
+  color: rgb(255, 255, 255) !important;
+  /* Color of the separator */
+  padding: 0 10px;
+  /* Adjust the spacing between items */
+}
+
+.con h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.breadcrumb-item a {
+  color: rgb(255, 255, 255);
+  /* Color of the breadcrumb links */
+}
+
+.breadcrumb-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.display-4 {
+  font-weight: bolder;
+  margin-top: -30px;
+}
+
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 2px solid #194174;
+  background: #194174 !important;
+  color: rgb(0, 0, 0);
+}
+
+
+.card {
+  padding: 30px;
+}
+
+.card-img-top {
+  height: 200px;
+  /* Fixed height for consistency */
+  width: 100%;
+  /* Ensure the image takes the full width of the card */
+  object-fit: contain;
+  /* Ensure the image fits within the container without being cropped */
+  transition: transform 0.5s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  /* Zoom in the image slightly on hover */
+}
+
+.card-title {
+  font-weight: bold;
+}

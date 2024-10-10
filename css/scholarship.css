@@ -1,0 +1,130 @@
+.about-us-section {
+  height: 150px;
+  background-color: #194174 !important;
+  /* Blue background color */
+  color: rgb(255, 255, 255);
+  padding: 50px 0;
+  position: relative;
+}
+
+.breadcrumb {
+  background-color: #194174 !important;
+  /* background: transparent; */
+  justify-content: center;
+  /* Center the breadcrumb */
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '>' !important;
+  color: rgb(255, 255, 255) !important;
+  /* Color of the separator */
+  padding: 0 10px;
+  /* Adjust the spacing between items */
+}
+
+.con h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.breadcrumb-item a {
+  color: rgb(255, 255, 255);
+  /* Color of the breadcrumb links */
+}
+
+.breadcrumb-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.display-4 {
+  font-weight: bolder;
+  margin-top: -30px;
+}
+
+
+/* Section */
+.section2 {
+  margin-top: 20px;
+}
+
+.scholarship-card {
+  /* text-align: justify; */
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.scholarship-card h3 {
+  color: black;
+}
+
+.scholarship-card button {
+  /* margin-top: 20px; */
+  background-color: #194174;
+  color: white;
+}
+
+/* Scholarship types */
+.scholarship-types {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.scholarship-types h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.scholarship-types .col-md-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* .scholarship-types .number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #194174;
+}
+.scholarship-types .description {
+  font-size: 1.2em;
+  color: #333;
+} */
+.description {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  color: #194174;
+  /* Replace 'blue' with the actual color code */
+  font-weight: bold;
+  /* Optional */
+  margin-right: 5px;
+  /* Adjust the spacing between the number and text if necessary */
+  font-size: 2em;
+}
+
+.text {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  /* margin-top: 0px; */
+  background-color: #194174;
+  color: white;
+
+}
+
+.text-center {
+  text-align: center;
+}
