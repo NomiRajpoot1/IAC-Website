@@ -9,7 +9,3 @@ services:
     - 8090:80
     hostname: iac_website
     container_name: iac_website
-    volumes:
-    - iac_web_data:/opt/app
-volumes:
-  iac_web_data:
