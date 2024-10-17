@@ -6,6 +6,6 @@ services:
       no_cache: true
     image: iac_website
     ports:
-    - 8090:80
+    - 5000:80
     hostname: iac_website
     container_name: iac_website
